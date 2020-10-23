@@ -1,13 +1,6 @@
 package com.bookapp.model;
 
-import org.springframework.data.annotation.Id;
-import org.springframework.data.annotation.TypeAlias;
-import org.springframework.data.mongodb.core.mapping.Document;
-
-@Document(collection="book")
-@TypeAlias("Book")
 public class Book {
-	@Id
 	Integer bookId;
 	String title;
 	String category;
